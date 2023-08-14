@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../componets/layout'
+import Footer from '../componets/footer'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link';
@@ -31,6 +32,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <Footer />
     </Layout>
   )
 }
